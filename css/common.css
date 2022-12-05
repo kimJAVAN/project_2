@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* webfont */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Secular+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul, li, ol{
+    list-style: none;
+    color:#666;
+}
+a{
+    text-decoration: none;
+    color:#444;
+}
+
+/* font */
+.sliderfont{
+    font-family: "Secular One";
+    font-size:80px;
+    color:#444;
+    text-transform: uppercase;
+    line-height: 90%;
+}
+.titlefont{
+    font-family: "Secular One";
+    font-size:50px;
+    color:#444;
+}
+.titlefont2{
+    font-family: "Secular One";
+    font-size:30px;
+    color:#444;
+}
+.arial1{
+    font-family: Arial;
+    color:#444;
+    font-size:16px;
+}
+
+/* hr */
+hr{
+    border:solid 1px #666;
+}
+
+/*common*/
+header{
+    width:100%;
+    height:90px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    width:100%;
+    height:90px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+}
+footer>div{
+    width:93%;
+    height:90px;
+    border-left: 2px solid #666;
+    border-right: 2px solid #666;
+}
