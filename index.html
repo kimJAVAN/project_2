@@ -8,6 +8,37 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".another").hover(function(){
+                $(".pimg1").show();
+            },function(){
+                $("pimg1").hide();
+            });
+            $(".santal").hover(function(){
+                $(".pimg2").show();
+            },function(){
+                $(".pimg2").hide();
+            });
+            $(".noir").hover(function(){
+                $(".pimg3").show();
+            },function(){
+                $(".pimg3").hide();
+            });
+            $(".marcha").hover(function(){
+                $(".pimg4").show();
+            },function(){
+                $(".pimg4").hide();
+            });
+            $(".baie").hover(function(){
+                $(".pimg5").show();
+            },function(){
+                $(".pimg5").hide();
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -33,32 +64,39 @@
             </div>
         </article>
         <table>
-            <tr>
+            <tr class="another">
                 <td class="titlefont2 tr1">ANOTHER 13</td>
                 <td class="arial1 tr2">280,000</td>
                 <td class="arial1 tr3">Moss<br>Jasmine<br>Ambrox</td>
             </tr>
-            <tr>
+            <tr class="santal">
                 <td class="titlefont2 tr1">SANTAL 33</td>
                 <td class="arial1 tr2">280,000</td>
                 <td class="arial1 tr3">Iris<br>Violet<br>Ambrox</td>
             </tr>
-            <tr>
+            <tr class="noir">
                 <td class="titlefont2 tr1">THE NOIR 29</td>
                 <td class="arial1 tr2">280,000</td>
                 <td class="arial1 tr3">Bergamot<br>Fig<br>Bay tree</td>
             </tr>
-            <tr>
+            <tr class="marcha">
                 <td class="titlefont2 tr1">THE MATCHA 26</td>
                 <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Bitter Orange<br>FIG<br>Cedarwood</td>
+                <td class="arial1 tr3">Bitter Orange<br>Fig<br>Cedarwood</td>
             </tr>
-            <tr>
+            <tr class="baie">
                 <td class="titlefont2 tr1">BAIE 19</td>
                 <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Juniper Berry<br>Patchouli<br>Leaves</td>
+                <td class="arial1 tr3">Juniper berry<br>Patchouli<br>Leaves</td>
             </tr>
         </table>
+        <div>
+            <img src="img/a39.jpg" alt="img" class="pimg1">
+            <img src="img/p1.jpeg" alt="img" class="pimg2">
+            <img src="img/p5.jpg" alt="img" class="pimg3">
+            <img src="img/p6.jpg" alt="img" class="pimg4">
+            <img src="img/p7.jpg" alt="img" class="pimg5">
+        </div>
     </div>
 
     <div id="sec2">
@@ -72,7 +110,6 @@
 
             <div class="sec2div3">
             </div>
-
         </div>
     </div>
 
@@ -84,7 +121,10 @@
                 <div></div>
                 <div></div>
             </div>
-            <div></div>
+            <div class="sec3div2">
+                <p class="titlefont">&#60;LE LABO FRAGRANCES</p>
+                <p class="text1">2006년 뉴욕에서 탄생한 핸드메이드 퍼퓸 하우스 르 라보를 소개합니다. 르 라보는 향수를 만드는 실험실을 테마로 하며, 핸드메이드 퍼퓸과 홈 컬렉션, 바디 컬렉션을 선보입니다. 르 라보의 퍼퓸 컬렉션은 재능 있고 독창적인 조향사들과의 작업으로 만들어집니다. <br><br>Introducing Le Labo, a handmade perfume house founded in New York in 2006. Le Labo presents handmade perfumes, home collections, and body collections with the theme of a perfume-making laboratory. Le Labo's perfume collection is created in collaboration with talented and creative perfumers.</p>
+            </div>
             <div></div>
         </div>
     </div>
@@ -93,11 +133,20 @@
 
     <div id="sec4">
         <div class="titlefont">
-            <div class="sec4div1">
-            </div>
+            <div class="sec4div1"></div>
             <div class="sec4div2">
+                <p class="titlefont">What<br> Le Labo Offers &#47;</p>
+                <p class="text1">Introducing the services provided to you by Le Labo</p>
             </div>
             <div class="sec4div3">
+                <div>
+                    <p class="titlefont2">name labeling service</p>
+                    <p class="text1">르 라보는 뉴욕에서 탄생한 핸드메이드 퍼퓸 브랜드입니다. 르 라보는 오늘날 럭셔리 향수 시장의 틀을 깬 혁신적인 경험을 선사합니다. 모든 향수는 신성하게 핸드 블렌딩 되며, 고객의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.<br><br>Le Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
+                </div>
+                <div>
+                    <p class="titlefont2">provide a new experience</p>
+                    <p class="text1">르 라보는 향수를 만들어 내거나 새로운 매장을 여는 모든 과정 하나 하나에 심혈을 기울입니다. 르 라보의 가장 중요한 미션은 우리의 작품과 그 아름다움을 세상에 공유하는 것입니다. 이것은 단순히 제품을 판매하는 차원이 아니라, 르 라보에서 감각적인 경험과 추억, 새로운 관점을 제공하는 것입니다. 이것은 하나의 새로운 라이프 스타일입니다.<br><br>Le Labo pays close attention to every step of the process, from creating a perfume to opening a new store. Le Labo's most important mission is to share our work and its beauty with the world. This is not just about selling products, but about providing sensory experiences, memories and new perspectives at Le Labo. This is a new lifestyle.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -105,31 +154,84 @@
     <hr>
 
     <div id="sec5">
-        <div></div>
+        <div>
+            <p class="titlefont">other product &#47;</p>
+            <p class="arial1 sec5p">Candle<br>Shampoo<br>Body Lotion</p>
+        </div>
     </div>
 
     <div id="sec6">
         <div>
             <div></div>
-            <table></table>
+            <ul>
+                <li class="sec6ti titlefont2">&#47; CANDLE</li>
+                <li class="sec6sub arial1">LAURIER 62</li>
+                <li class="sec6sub arial1">VERVEINE 32</li>
+                <li class="sec6sub arial1">PALO SANTO 14</li>
+                <li class="sec6sub arial1">SANTAL 26</li>
+
+                <li class="sec6ti titlefont2">&#47; SHAMPOO</li>
+                <li class="sec6sub arial1">SHAMPOO BASIL</li>
+                <li class="sec6sub arial1">SHAMPOO</li>
+                <li class="sec6sub arial1">SCRUB SHAMPOO</li>
+
+                <li class="sec6ti titlefont2">&#47; BODY LOTION</li>
+                <li class="sec6sub arial1">TONKA 25</li>
+                <li class="sec6sub arial1">NEROLI 36</li>
+                <li class="sec6sub arial1">BERGAMOTE 22</li>
+                <li class="sec6sub arial1">ROSE 31</li>
+                <li class="sec6sub1 arial1">LYS 41</li>
+            </ul>
         </div>
     </div>
 
     <hr>
-    <div id="sec7">
-        <div></div>
+    <div id="sec7" class="marquee">
+        <div class="outer">
+            <div class="sliderfont inner">
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+                <p class="content">&nbsp;&#47;&nbsp;CONTACT&nbsp;US&nbsp;&#47;&nbsp;</p>
+            </div>
+        </div>
     </div>
     <hr>
 
     <div id="sec8">
         <div>
-            <div></div>
-            <table></table>
+            <div class="arial2 sec8img">
+                <img src="img/bg6.jpg" alt="bg">
+            </div>
+            <div>
+                <div class="arial2 sec8ti">Le Labo is created in collaboration with talented and creative perfumers.<br> We look forward to hearing from you who are reading this article.</div>
+                <div class="titlefont2 sec8sub">HOME</div>
+                <div class="titlefont2 sec8sub">ABOUT</div>
+                <div class="titlefont2 sec8sub">CONTACT</div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <div></div>
+        <div>
+            <div><a href="https://github.com/geunyoungkim1998" class="arial1">GYKIM</a></div>
+            <div>
+                <p><a href="https://department.ssg.com/disp/brandShop.ssg?brandId=3000014761&sort=prcasc" class="arial1">SSG</a></p>
+                <p><a href="https://eyesmag.com/posts/137846/a-to-z-vol-12-LELABO" class="arial1">EYESMAG</a></p>
+                <p><a href="https://perfumegraphy.com/category/%EB%A5%B4%EB%9D%BC%EB%B3%B4/247/" class="arial1"a>PERFUMEGRAPHY</a></p>
+                <p><a href="http://www.elcakorea.com/brand/le_labo" class="arial1">ELCAKOREA</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
