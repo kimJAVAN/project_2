@@ -11,40 +11,56 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
+        // $(function(){
+        //     $(".another").hover(function(){
+        //         $(".pimg1").show();
+        //     },function(){
+        //         $("pimg1").hide();
+        //     });
+        //     $(".santal").hover(function(){
+        //         $(".pimg2").show();
+        //     },function(){
+        //         $(".pimg2").hide();
+        //     });
+        //     $(".noir").hover(function(){
+        //         $(".pimg3").show();
+        //     },function(){
+        //         $(".pimg3").hide();
+        //     });
+        //     $(".marcha").hover(function(){
+        //         $(".pimg4").show();
+        //     },function(){
+        //         $(".pimg4").hide();
+        //     });
+        //     $(".baie").hover(function(){
+        //         $(".pimg5").show();
+        //     },function(){
+        //         $(".pimg5").hide();
+        //     });
+        // });
         $(function(){
-            $(".another").hover(function(){
-                $(".pimg1").show();
-            },function(){
-                $("pimg1").hide();
-            });
-            $(".santal").hover(function(){
-                $(".pimg2").show();
-            },function(){
-                $(".pimg2").hide();
-            });
-            $(".noir").hover(function(){
-                $(".pimg3").show();
-            },function(){
-                $(".pimg3").hide();
-            });
-            $(".marcha").hover(function(){
-                $(".pimg4").show();
-            },function(){
-                $(".pimg4").hide();
-            });
-            $(".baie").hover(function(){
-                $(".pimg5").show();
-            },function(){
-                $(".pimg5").hide();
-            });
-        });
+            $("#radio1").click(function(){
+                $("#slide1").fadeIn();
+                $("#slide2").hide();
+            })
+            $("#radio2").click(function(){
+                $("#slide2").fadeIn();
+                $("#slide1").hide();
+            })
+        })
     </script>
 </head>
 <body>
     <header>
         <div></div>
         <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
-        <div></div>
+        <div>
+            <a class="menu-trigger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </header>
     <hr>
     <div id="slider">
@@ -90,13 +106,13 @@
                 <td class="arial1 tr3">Juniper berry<br>Patchouli<br>Leaves</td>
             </tr>
         </table>
-        <div>
+        <!-- <div>
             <img src="img/a39.jpg" alt="img" class="pimg1">
             <img src="img/p1.jpeg" alt="img" class="pimg2">
             <img src="img/p5.jpg" alt="img" class="pimg3">
             <img src="img/p6.jpg" alt="img" class="pimg4">
             <img src="img/p7.jpg" alt="img" class="pimg5">
-        </div>
+        </div> -->
     </div>
 
     <div id="sec2">
@@ -115,16 +131,69 @@
 
     <div id="sec3">
         <div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="sec3div1">
+                <div>
+                    <img src="img/a17.jpg" alt="img">
+                    <p class="titlefont2">TUBEREUSE 40</p>
+                    <p class="ridi1 border3">
+                        르 라보의 대다수가 그렇듯, '튜베로즈 40'도 이름 그대로 기존
+                        튜베로즈 향수와는 다소 차이가 있다. 물론 튜베로즈 앱솔루트가 다량 첨가됐지만, 의외로
+                        가장 먼저 다가오는 향은 산뜻한 오 드 코롱을 뿌린 듯한 프레쉬한 베르가못과 텐저린
+                        그리고 오렌지 플라워 향. 그 후 캐릭터를 부여하는 우디 플로럴 향이 느껴지며, 
+                        마침내 튜베로즈와 화이트 플로럴 향 그리고 우드가 오크 모스 및 머스크와 함께
+                        찾아온다. 한마디로 강렬하면서도 순수한 느낌이 공존하는 향.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a18.jpg" alt="img">
+                    <p class="titlefont2">ALDEHYDE 44</p>
+                    <p class="ridi1 border3">
+                        '알데하이드 44'는 알데하이드 원료를 듬뿍 넣어 독특하면서도 깨끗한
+                        매력을 가진 향수. 첫 만남엔 수선화, 재스민, 튜베로즈 앱솔루트의 웅장한 플로럴
+                        향이 풍성하게 감싸 안아 주지만 헤어질 땐 머스크와 은근한 바닐라로 잔잔한
+                        여운을 남긴다. 후일담으로, 르 라보는 이 향을 우연히 맡은 뒤 댈러스로의
+                        여행을 고민했다는 고객의 메일을 받기도 한다고.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a19.jpg" alt="img">
+                    <p class="titlefont2">VARNILLE 44</p>
+                    <p class="ridi1 border3">
+                        '바닐 44'또한 평범한 바닐라 향은 아니다. 앰버, 인센스, 우디 향이 어우러진 관능적인
+                        향으로, 파시미나 스웨터에 스며들면 여태껏 경험해본 적 없는 최고급 버번 바닐라 향을
+                        느낄 수 있다. "파리에서만 이 향을 살 수 있게 한 건 르 라보의 실수다" 혹은 "이렇게
+                        특별한 향을 바닐이란 이름을 달고 있는 걸 용납할 수 없다"는 등 애호가들의
+                        사랑을 듬뿍 받고 있는 제품. 
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a20.jpg" alt="img">
+                    <p class="titlefont2">POIVRE 23</p>
+                    <p class="ridi1 border3">
+                        '프아브르 23'은 르 라보를 대표하는 페퍼 베이스 향수. 향료의 왕으로 불리는 페퍼
+                        중에서도 롤스로이스로 불릴 만큼 최상급의 버번 페퍼가 사용됐으며, 이로써 따스하면서도
+                        스파이시한 페퍼 특유의 향을 여실히 담아냈다. 또한 어둡고 묵직한 우디와 스무스한
+                        바닐라가 어우러져 이국적인 감성을 몸소 느낄 수 있다.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a21.jpg" alt="img">
+                    <p class="titlefont2">MUSC 25</p>
+                    <p class="ridi1">
+                        '머스크 25'는 스페인어로 천사들을 의미하는 로스앤젤레스에 영감받아, 머스크야말로
+                        천사들도 매료당할 만한 향이라는 상정 하에 탄생했다. 진한 머스크와 알데하이드가
+                        어우러져, 하얀 천사처럼 눈부시게 빛나는 향이랄까. 천상의 순백색으로 빛나는 동시에
+                        깊은 중심에는 악마적인 어둠이 자리하고 있어 숨겨진 마성을 끌어낸다는 것이 르 라보의
+                        은유적인 설명이다. 센슈얼하고 퇴폐적인 매력을 풍기고 싶은 이들에게 제격이다.
+                    </p>
+                </div>
             </div>
             <div class="sec3div2">
                 <p class="titlefont">&#60;LE LABO FRAGRANCES</p>
-                <p class="text1">2006년 뉴욕에서 탄생한 핸드메이드 퍼퓸 하우스 르 라보를 소개합니다. 르 라보는 향수를 만드는 실험실을 테마로 하며, 핸드메이드 퍼퓸과 홈 컬렉션, 바디 컬렉션을 선보입니다. 르 라보의 퍼퓸 컬렉션은 재능 있고 독창적인 조향사들과의 작업으로 만들어집니다. <br><br>Introducing Le Labo, a handmade perfume house founded in New York in 2006. Le Labo presents handmade perfumes, home collections, and body collections with the theme of a perfume-making laboratory. Le Labo's perfume collection is created in collaboration with talented and creative perfumers.</p>
-            </div>
+                <p class="ridi1">2006년 뉴욕에서 탄생한 핸드메이드 퍼퓸 하우스 르 라보를 소개합니다. 르 라보는 향수를 만드는 실험실을 테마로 하며, 핸드메이드 퍼퓸과 홈 컬렉션, 바디 컬렉션을 선보입니다. 르 라보의 퍼퓸 컬렉션은 재능 있고 독창적인 조향사들과의 작업으로 만들어집니다. <br><br>
+                    <span class="text1">Le Labo, a handmade perfume house founded in New York in 2006. Le Labo presents handmade perfumes, home collections, and body collections with the theme of a perfume-making laboratory. Le Labo's perfume collection is created in collaboration with talented and creative perfumers.</p>
+                    </span> 
+                    </div>
             <div></div>
         </div>
     </div>
@@ -139,13 +208,23 @@
                 <p class="text1">Introducing the services provided to you by Le Labo</p>
             </div>
             <div class="sec4div3">
-                <div>
+                <div id="slide1">
                     <p class="titlefont2">name labeling service</p>
-                    <p class="text1">르 라보는 뉴욕에서 탄생한 핸드메이드 퍼퓸 브랜드입니다. 르 라보는 오늘날 럭셔리 향수 시장의 틀을 깬 혁신적인 경험을 선사합니다. 모든 향수는 신성하게 핸드 블렌딩 되며, 고객의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.<br><br>Le Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
-                </div>
-                <div>
+                    <p class="ridi1">르 라보는 뉴욕에서 탄생한 핸드메이드 퍼퓸 브랜드입니다. 르 라보는 오늘날 럭셔리 향수 시장의 틀을 깬 혁신적인 경험을 선사합니다. 모든 향수는 신성하게 핸드 블렌딩 되며, 고객의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.<br><br>
+                        <span class="text1">
+                         Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
+                        </span>
+                        </div>
+                <div id="slide2">
                     <p class="titlefont2">provide a new experience</p>
-                    <p class="text1">르 라보는 향수를 만들어 내거나 새로운 매장을 여는 모든 과정 하나 하나에 심혈을 기울입니다. 르 라보의 가장 중요한 미션은 우리의 작품과 그 아름다움을 세상에 공유하는 것입니다. 이것은 단순히 제품을 판매하는 차원이 아니라, 르 라보에서 감각적인 경험과 추억, 새로운 관점을 제공하는 것입니다. 이것은 하나의 새로운 라이프 스타일입니다.<br><br>Le Labo pays close attention to every step of the process, from creating a perfume to opening a new store. Le Labo's most important mission is to share our work and its beauty with the world. This is not just about selling products, but about providing sensory experiences, memories and new perspectives at Le Labo. This is a new lifestyle.</p>
+                    <p class="ridi1">르 라보는 향수를 만들어 내거나 새로운 매장을 여는 모든 과정 하나 하나에 심혈을 기울입니다. 르 라보의 가장 중요한 미션은 우리의 작품과 그 아름다움을 세상에 공유하는 것입니다. 이것은 단순히 제품을 판매하는 차원이 아니라, 르 라보에서 감각적인 경험과 추억, 새로운 관점을 제공하는 것입니다. 이것은 하나의 새로운 라이프 스타일입니다.<br><br>
+                        <span class="text1">
+                        Le Labo pays close attention to every step of the process, from creating a perfume to opening a new store. Le Labo's most important mission is to share our work and its beauty with the world. This is not just about selling products, but about providing sensory experiences, memories and new perspectives at Le Labo. This is a new lifestyle.</p>
+                        </span>
+                    </div>
+                <div id="slidebtn">
+                    <input for="slide1" type="radio" id="radio1">&nbsp;</input>
+                    <input for="slide1" type="radio" id="radio2">&nbsp;</input>
                 </div>
             </div>
         </div>
@@ -162,7 +241,137 @@
 
     <div id="sec6">
         <div>
-            <div></div>
+            <div>
+                <div>
+                    <img src="img/candle1.jpg" alt="candle">
+                    <p>
+                        <p class="titlefont2">LAURIER 62</p>
+                        <p class="ridi1">향긋한 월계수 노트에 스파이시 무드를 가득 더한 이국적인 향의 글래스 캔들</p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/candle2.jpg" alt="candle">
+                    <p>
+                        <p class="titlefont2">VERVEINE 32</p>
+                        <p class="ridi1">신선한 숲의 흙내음이 평화로운 기운을 불어 넣어주는 아로마틱한 향</p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/candle3.jpg" alt="candle">
+                    <p>
+                        <p class="titlefont2">PALO SANTO 14</p>
+                        <p class="ridi1">팔로 산토의 에너제틱한 향에 시더 우드, 패출리가 어우러진 따스한 느낌의 글래스 캔들</p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/candle4.jpg" alt="candle">
+                    <p>
+                        <p class="titlefont2">SANTAL 26</p>
+                        <p class="ridi1">말보로 맨에서 영감을 받아 탄생한 센슈얼하고 스모키한 머스크향의 글래스 캔들</p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/shampoo1.jpg" alt="shampoo">
+                    <p>
+                        <p class="titlefont2">SHAMPOO BASIL</p>
+                        <p class="ridi1">매끄러운 질감의 텍스처로, 머릿결에 깊고 
+                            풍부한 영양을 제공합니다. 마카다미아(영양)와 로즈마리 잎(두피 케어), 쌀 추출물(강화)을 함유한 포뮬라로, 
+                            인공 색소를 넣지 않았습니다. 감각을 일깨우는 풍성한 바질 향을 느낄 수 있습니다. 여기에 버베나의 시트러스한
+                            향이 어우러져 더욱 산뜻한 느낌을 선사합니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/shampoo2.jpg" alt="shampoo">
+                    <p>
+                        <p class="titlefont2">SHAMPOO</p>
+                        <p class="ridi1">매끄러운 질감의 텍스처로, 머릿결에 깊고 
+                            풍부한 영양을 제공합니다. 마카다미아(영양)와 로즈마리 잎(두피 케어), 쌀 추출물(강화)을 함유한 포뮬라로, 
+                            인공 색소를 넣지 않았습니다. 일본 고야산의 불교 사원에서
+                            영감을 받은 히노키 향을 담았습니다. 히노키 나무 숲에 둘러싸인 듯 신비롭고 따뜻하며 매혹적인 느낌을 선사합니다
+                            르 라보는 비건 브랜드로, 동물 실험을 하지 않습니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/shampoo3.jpg" alt="shampoo">
+                    <p>
+                        <p class="titlefont2">SCRUB SHAMPOO</p>
+                        <p class="ridi1">
+                            두피 케어를 위한 스크럽 샴푸<br>
+                            부드럽게 녹아내리는 씨 솔트의 스크럽 효과에 멘솔이 더해져 두피에 상쾌한 느낌을 선사합니다. 
+                            블랙 씨 솔트(두피케어)와 올리브 오일(강화), 아보카도 오일(영양)을 함유한 포뮬라로,
+                            인공 색소를 넣지 않았습니다. 감각을 일깨우는 풍성한 바질 향을 느낄 수 있습니다. 여기에 
+                            버베나의 시트러스한 향이 어우러져 더욱 산뜻한 느낌을 선사합니다. 르 라보는 비건 브랜드로, 동물 실험을 하지 않습니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/lotion1.jpg" alt="lotion">
+                    <p>
+                        <p class="titlefont2">TONKA 25</p>
+                        <p class="ridi1">
+                            우디 노트에 약간의 달콤함을 더한 중독적인 향
+                            통카 25는 아주 어두운 매력을 지닌 향입니다. 물론 좋은 의미로요. 
+                            어둑어둑하면서도 어딘가 따스한 살결을 떠올리게 하는 향으로 젖은 나무 덤불과 레진,
+                            씨앗이 겹겹이 머스크와 어우러지도 여기에 바닐라로 희미하게 달콤함을 몇 방울 더합니다. 
+                            오렌지 플라워 앱솔루트와 시더 아틀라스, 때죽나무 레진, 통카 앱솔루트와 머스크... 
+                            우리는 이 아름다운 조화를 '통카 25'라 부릅니다. 
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/lotion2.jpg" alt="lotion">
+                    <p>
+                        <p class="titlefont2">NEROLI 36</p>
+                        <p class="ridi1">
+                            달콤쌉싸름한 오렌지 블로썸과 플로럴 부케가 어우러진 프레쉬 아쿠아틱 향
+                            네롤리는 오렌지 블로썸 에센스의 또다른 이름입니다. 르 라보의 네롤리는 따뜻하고 싱그러운 플로럴
+                            향에 센슈얼한 베이스를 더해 독창적으로 만들어졌습니다. 로즈, 머스크, 만다린 오렌지,
+                            자스민, 바닐라에 네롤리가 어우러져 톡 쏘는 듯 하면서도 편안하고 열정적이고, 따뜻한 향을
+                            완성합니다. 웰빙과 우아함, 매력을 한 병에 담은 향수입니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/lotion3.jpg" alt="lotion">
+                    <p>
+                        <p class="titlefont2">BERGAMOTE 22</p>
+                        <p class="ridi1">베르가못 22는 신선함, 달콤함, 그리고 센슈얼한 느낌을 모두 담은 시트러스 프레쉬
+                            계열의 향입니다. 이 놀라운 조합은 이 향의 원래 코드명이었던 "파이어 코롱(Fire Cologne)"에서
+                            연상할 수 있습니다. 페티그레인의 섬세한 플로럴 향, 자몽의 쌉싸래한 향, 앰버와 머스크의 풍성한
+                            달콤한, 그리고 베티버의 남성미 넘치는 터치가 더해져 베르가못 22의 독특한 개성을 완성합니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/lotion4.jpg" alt="lotion">
+                    <p>
+                        <p class="titlefont2">ROSE 31</p>
+                        <p class="ridi1">남성적인 매력이 더해져 신비롭고 관능적인 스파이시 로즈 향
+                            이 향수를 만든 이유는 분명합니다. 관능미와 여성미의 상징인 그라스의 장미 원료로 남성적인 향을
+                            만들어, 남녀 모두 사용할 수 있도록 하는 것입니다. 그 결과 탄생한 로즈 31은, 센티폴리아 로즈의
+                            모호한 매력으로 남성성/여성성의 경계를 뛰어 넘었습니다. 여기에 쿠민, 유향, 시더우드와
+                            앰버의 노트가 더해져 따뜻하면서도 스파이시한 우디 향을 선사합니다. 베이스 노트로 가이악 우드와
+                            시스투스가 센슈얼한 느낌을 주며 동물적이고 관능적인 향이 신비로움을 더합니다.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="img/lotion5.jpg" alt="lotion">
+                    <p>
+                        <p class="titlefont2">LYS 41</p>
+                        <p class="ridi1">
+                            릴리, 튜베로즈, 자스민 등 풍성한 화이트 플라워들이 어우러진 중독적인 플로럴 향
+                            리스 41은 풍성하게 넘치는 화이트 플라워들의 향입니다.
+                            자스민, 튜베로즈 앱솔루트, 릴리의 우아하면서도 따뜻한 향이 마법처럼 펼쳐집니다. 
+                            우아한 우드 향, 마다가스카 바닐라와 머스크가 더해져 한 번 빠지면 헤어나올 수 없는 매력에
+                            사로잡힙니다. 리스 41은 중독적인 플로럴 향으로 매력적인 잔향의 여운을 남겨 사람들이
+                            당신 주위를 맴돌게 할 것입니다.
+                        </p>
+                    </p>
+                </div>
+            </div>
             <ul>
                 <li class="sec6ti titlefont2">&#47; CANDLE</li>
                 <li class="sec6sub arial1">LAURIER 62</li>
@@ -211,7 +420,7 @@
     <div id="sec8">
         <div>
             <div class="arial2 sec8img">
-                <img src="img/bg6.jpg" alt="bg">
+                <video src="img/video.mp4"></video>
             </div>
             <div>
                 <div class="arial2 sec8ti">Le Labo is created in collaboration with talented and creative perfumers.<br> We look forward to hearing from you who are reading this article.</div>
