@@ -8,64 +8,25 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link href="img/pobicon.png" rel="shortcut icon" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-        // $(function(){
-        //     $(".another").hover(function(){
-        //         $(".pimg1").show();
-        //     },function(){
-        //         $("pimg1").hide();
-        //     });
-        //     $(".santal").hover(function(){
-        //         $(".pimg2").show();
-        //     },function(){
-        //         $(".pimg2").hide();
-        //     });
-        //     $(".noir").hover(function(){
-        //         $(".pimg3").show();
-        //     },function(){
-        //         $(".pimg3").hide();
-        //     });
-        //     $(".marcha").hover(function(){
-        //         $(".pimg4").show();
-        //     },function(){
-        //         $(".pimg4").hide();
-        //     });
-        //     $(".baie").hover(function(){
-        //         $(".pimg5").show();
-        //     },function(){
-        //         $(".pimg5").hide();
-        //     });
-        // });
-        $(function(){
-            $("#radio1").click(function(){
-                $("#slide1").fadeIn();
-                $("#slide2").hide();
-            })
-            $("#radio2").click(function(){
-                $("#slide2").fadeIn();
-                $("#slide1").hide();
-            })
-        })
+    <script src="js/main.js">
     </script>
 </head>
 <body>
     <header>
-        <div></div>
-        <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
-        <div>
-            <a class="menu-trigger" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+        <div class="small">
+            <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
+        </div>
+        <div class="big">
+            <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
         </div>
     </header>
     <hr>
     <div id="slider">
         <div>
-            <p class="sliderfont">There are<br> so many<br> perfumes,<br> but not<br> many perfumes<br> with soul.</p>
+            <p class="sliderfont">&#147; There are<br> so many<br> perfumes,<br> but not<br> many perfumes<br> with soul. &#148;</p>
             <a href="#" class="arial1">+MORE ABOUT US+</a>
         </div>
     </div>
@@ -79,7 +40,7 @@
                 <p class="arial1">INCENCE</p>
             </div>
         </article>
-        <table>
+        <table class="sec1table">
             <tr class="another">
                 <td class="titlefont2 tr1">ANOTHER 13</td>
                 <td class="arial1 tr2">280,000</td>
@@ -106,24 +67,16 @@
                 <td class="arial1 tr3">Juniper berry<br>Patchouli<br>Leaves</td>
             </tr>
         </table>
-        <!-- <div>
-            <img src="img/a39.jpg" alt="img" class="pimg1">
-            <img src="img/p1.jpeg" alt="img" class="pimg2">
-            <img src="img/p5.jpg" alt="img" class="pimg3">
-            <img src="img/p6.jpg" alt="img" class="pimg4">
-            <img src="img/p7.jpg" alt="img" class="pimg5">
-        </div> -->
+
     </div>
 
     <div id="sec2">
         <div class="titlefont">
             <div class="sec2div1">
             </div>
-
             <div class="sec2div2">
                 <p>NEW</p>
             </div>
-
             <div class="sec2div3">
             </div>
         </div>
@@ -179,12 +132,43 @@
                 <div>
                     <img src="img/a21.jpg" alt="img">
                     <p class="titlefont2">MUSC 25</p>
-                    <p class="ridi1">
+                    <p class="ridi1 border3">
                         '머스크 25'는 스페인어로 천사들을 의미하는 로스앤젤레스에 영감받아, 머스크야말로
                         천사들도 매료당할 만한 향이라는 상정 하에 탄생했다. 진한 머스크와 알데하이드가
                         어우러져, 하얀 천사처럼 눈부시게 빛나는 향이랄까. 천상의 순백색으로 빛나는 동시에
                         깊은 중심에는 악마적인 어둠이 자리하고 있어 숨겨진 마성을 끌어낸다는 것이 르 라보의
                         은유적인 설명이다. 센슈얼하고 퇴폐적인 매력을 풍기고 싶은 이들에게 제격이다.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a22.jpg" alt="img">
+                    <p class="titlefont2">GAIAC 10</p>
+                    <p class="ridi1 border3">
+                        재료 가이악은 단단한 그린 계열의 나무로, 시더우드와는 달리 깊고 차분한 느낌을 준다. 르
+                        라보의 '가이악 10'은 가이악 우드를 베이스로 4가지의 다른 머스크가 그를 감싸고, 여기에 약간의
+                        시더와 올리바넘이 더해져 은은한 잔향이 특징. 또한 이름에서도 알 수 있듯 심플한 노트로
+                        구성돼 비교적 편안한 우디함을 느낄 수 있다.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a24.jpg" alt="img">
+                    <p class="titlefont2">LIMETTE 37</p>
+                    <p class="ridi1 border3">
+                        '리메트 37'은 샌프란시스코라는 도시가 주는 추상적인 매력에서 영감을 얻었다. 이를테면
+                        필모어 스트릿의 르 라보 부티크에서 노스 비치 해안까지 이어진 구불구불한 언덕길을 쭈욱 내달릴 때
+                        느낄 수 있는 상쾌함 같은 것. 산뜻하고 가벼운 느낌에서 시작해 자스민과 페티그레인, 클로브의
+                        따스한 매력이 느껴지고, 마지막에는 베티버와 통카 빈, 머스크의 풍성하고 부드러운 느낌으로 마무리된다.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/a25.jpg" alt="img">
+                    <p class="titlefont2">BENJOIN 19</p>
+                    <p class="ridi1">
+                        '벤조인 19'는 세기의 러시아 작가, 톨스토이의 소설 &#60;안나 까레리나&#62;를 배경으로 한다. 주인공
+                        안나가 모스크바 기차역 앞에서 브롱스키 백작을 만나게 되는 운명같은 순간처럼 모든 것이 마법처럼
+                        변해버리는 분기점 혹은 전환점을 담은 것. 900여 페이지에 달하는 &#60;안나 까레리나&#62;가 그랬듯, '벤조인 19'는
+                        벤조인을 중심으로 올리바넘, 앰버, 시더, 머스크 등 다양한 노트를 한 데 엮어 깊고 강렬한 관능미와
+                        동시에 반항적인 매력을 전한다.
                     </p>
                 </div>
             </div>
@@ -214,17 +198,17 @@
                         <span class="text1">
                          Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
                         </span>
-                        </div>
+                </div>
                 <div id="slide2">
                     <p class="titlefont2">provide a new experience</p>
                     <p class="ridi1">르 라보는 향수를 만들어 내거나 새로운 매장을 여는 모든 과정 하나 하나에 심혈을 기울입니다. 르 라보의 가장 중요한 미션은 우리의 작품과 그 아름다움을 세상에 공유하는 것입니다. 이것은 단순히 제품을 판매하는 차원이 아니라, 르 라보에서 감각적인 경험과 추억, 새로운 관점을 제공하는 것입니다. 이것은 하나의 새로운 라이프 스타일입니다.<br><br>
                         <span class="text1">
                         Le Labo pays close attention to every step of the process, from creating a perfume to opening a new store. Le Labo's most important mission is to share our work and its beauty with the world. This is not just about selling products, but about providing sensory experiences, memories and new perspectives at Le Labo. This is a new lifestyle.</p>
                         </span>
-                    </div>
+                </div>
                 <div id="slidebtn">
-                    <input for="slide1" type="radio" id="radio1">&nbsp;</input>
-                    <input for="slide1" type="radio" id="radio2">&nbsp;</input>
+                    <button type="button" id="button1" class="arial">1</button>
+                    <button type="button" id="button2" class="arial">2</button>
                 </div>
             </div>
         </div>
@@ -242,35 +226,35 @@
     <div id="sec6">
         <div>
             <div>
-                <div>
+                <div id="sec6_1">
                     <img src="img/candle1.jpg" alt="candle">
                     <p>
                         <p class="titlefont2">LAURIER 62</p>
                         <p class="ridi1">향긋한 월계수 노트에 스파이시 무드를 가득 더한 이국적인 향의 글래스 캔들</p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_2">
                     <img src="img/candle2.jpg" alt="candle">
                     <p>
                         <p class="titlefont2">VERVEINE 32</p>
                         <p class="ridi1">신선한 숲의 흙내음이 평화로운 기운을 불어 넣어주는 아로마틱한 향</p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_3">
                     <img src="img/candle3.jpg" alt="candle">
                     <p>
                         <p class="titlefont2">PALO SANTO 14</p>
                         <p class="ridi1">팔로 산토의 에너제틱한 향에 시더 우드, 패출리가 어우러진 따스한 느낌의 글래스 캔들</p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_4">
                     <img src="img/candle4.jpg" alt="candle">
                     <p>
                         <p class="titlefont2">SANTAL 26</p>
                         <p class="ridi1">말보로 맨에서 영감을 받아 탄생한 센슈얼하고 스모키한 머스크향의 글래스 캔들</p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_5">
                     <img src="img/shampoo1.jpg" alt="shampoo">
                     <p>
                         <p class="titlefont2">SHAMPOO BASIL</p>
@@ -281,7 +265,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_6">
                     <img src="img/shampoo2.jpg" alt="shampoo">
                     <p>
                         <p class="titlefont2">SHAMPOO</p>
@@ -293,7 +277,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_7">
                     <img src="img/shampoo3.jpg" alt="shampoo">
                     <p>
                         <p class="titlefont2">SCRUB SHAMPOO</p>
@@ -306,7 +290,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_8">
                     <img src="img/lotion1.jpg" alt="lotion">
                     <p>
                         <p class="titlefont2">TONKA 25</p>
@@ -320,7 +304,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_9">
                     <img src="img/lotion2.jpg" alt="lotion">
                     <p>
                         <p class="titlefont2">NEROLI 36</p>
@@ -333,7 +317,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_10">
                     <img src="img/lotion3.jpg" alt="lotion">
                     <p>
                         <p class="titlefont2">BERGAMOTE 22</p>
@@ -344,7 +328,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_11">
                     <img src="img/lotion4.jpg" alt="lotion">
                     <p>
                         <p class="titlefont2">ROSE 31</p>
@@ -357,7 +341,7 @@
                         </p>
                     </p>
                 </div>
-                <div>
+                <div id="sec6_12">
                     <img src="img/lotion5.jpg" alt="lotion">
                     <p>
                         <p class="titlefont2">LYS 41</p>
@@ -374,22 +358,22 @@
             </div>
             <ul>
                 <li class="sec6ti titlefont2">&#47; CANDLE</li>
-                <li class="sec6sub arial1">LAURIER 62</li>
-                <li class="sec6sub arial1">VERVEINE 32</li>
-                <li class="sec6sub arial1">PALO SANTO 14</li>
-                <li class="sec6sub arial1">SANTAL 26</li>
+                <li class="sec6sub arial1" id="li1">LAURIER 62</li>
+                <li class="sec6sub arial1" id="li2">VERVEINE 32</li>
+                <li class="sec6sub arial1" id="li3">PALO SANTO 14</li>
+                <li class="sec6sub arial1" id="li4">SANTAL 26</li>
 
                 <li class="sec6ti titlefont2">&#47; SHAMPOO</li>
-                <li class="sec6sub arial1">SHAMPOO BASIL</li>
-                <li class="sec6sub arial1">SHAMPOO</li>
-                <li class="sec6sub arial1">SCRUB SHAMPOO</li>
+                <li class="sec6sub arial1" id="li5">SHAMPOO BASIL</li>
+                <li class="sec6sub arial1" id="li6">SHAMPOO</li>
+                <li class="sec6sub arial1" id="li7">SCRUB SHAMPOO</li>
 
                 <li class="sec6ti titlefont2">&#47; BODY LOTION</li>
-                <li class="sec6sub arial1">TONKA 25</li>
-                <li class="sec6sub arial1">NEROLI 36</li>
-                <li class="sec6sub arial1">BERGAMOTE 22</li>
-                <li class="sec6sub arial1">ROSE 31</li>
-                <li class="sec6sub1 arial1">LYS 41</li>
+                <li class="sec6sub arial1" id="li8">TONKA 25</li>
+                <li class="sec6sub arial1" id="li9">NEROLI 36</li>
+                <li class="sec6sub arial1" id="li10">BERGAMOTE 22</li>
+                <li class="sec6sub arial1" id="li11">ROSE 31</li>
+                <li class="sec6sub1 arial1" id="li12">LYS 41</li>
             </ul>
         </div>
     </div>
@@ -420,7 +404,7 @@
     <div id="sec8">
         <div>
             <div class="arial2 sec8img">
-                <video src="img/video.mp4"></video>
+                <video src="img/video.mp4" autoplay muted loop></video>
             </div>
             <div>
                 <div class="arial2 sec8ti">Le Labo is created in collaboration with talented and creative perfumers.<br> We look forward to hearing from you who are reading this article.</div>
