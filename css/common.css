@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* webfont */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Secular+One&display=swap');
 @font-face {
     font-family: 'RIDIBatang';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
@@ -49,21 +48,28 @@ body::-webkit-scrollbar-thumb{
     line-height: 120%;
     text-transform: uppercase;
 }
-.arial1{
+.titlefont3{
+    font-family: "Secular One";
+    color:white;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.arial1, .arial2, .arial3{
     font-family: Arial;
     color:#444;
 }
-.arial2{
+.arial4{
     font-family: Arial;
-    color:#444;
+    color:white;
 }
+
 .text1{
-    font-family: "Roboto Slab Regular";
+    font-family: "Roboto Slab";
     color:#666;
     line-height: 130%;
 }
 .ridi1{
-    font-family: "리디바탕";
+    font-family: "RIDIBatang";
     color:#444;
     line-height: 140%;
 }
@@ -83,7 +89,7 @@ header{
     position:fixed;
     background-color: white;
     z-index: 20;
-    border-bottom: 2px solid #666;
+    border-bottom: 4px solid #666;
 }
 .big{
     display: flex;
@@ -94,6 +100,45 @@ header{
 .headnav>ul>li{
     display:inline-block;
     margin:0px 40px;
+}
+.overlay{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index:103; 
+    top: 0; 
+    right: 0; 
+    background-color:#444;
+    opacity: 0.95;
+    overflow-x: hidden; 
+    transition: 0.5s;
+}
+.overlay-content{
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    display:block; 
+    margin-top: 30px; 
+}
+.overlay a{ 
+    padding:10px; 
+    line-height:160%; 
+    text-decoration: none; 
+    font-size: 30px; 
+    color: #818181; 
+    transition: 0.3s; 
+    font-weight: bold; 
+    display: block;
+}
+.overlay a:hover, .overlay a:focus{
+    color: white;
+}
+.overlay .closebtn{
+    position: absolute; 
+    top: 20px; 
+    right: 45px; 
+    font-size: 60px;
 }
 
 
@@ -122,7 +167,10 @@ footer>div>div:nth-of-type(2)>p{
 /*media*/
 @media (max-width:767px){
     .small{
-        display: block;
+        width:90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .big{
         display: none;
@@ -133,10 +181,10 @@ footer>div>div:nth-of-type(2)>p{
     .titlefont{
         font-size:5vw;
     }
-    .titlefont2{
+    .titlefont2, .titlefont3{
         font-size:18px;
     }
-    .arial1, .text1, .ridi1{
+    .arial1, .text1, .ridi1, .arial4{
         font-size:12px;
         line-height: 150%;
     }
@@ -146,7 +194,10 @@ footer>div>div:nth-of-type(2)>p{
 }
 @media (min-width:768px){
     .small{
-        display: block;
+        width:90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .big{
         display: none;
@@ -157,10 +208,10 @@ footer>div>div:nth-of-type(2)>p{
     .titlefont{
         font-size:45px;
     }
-    .titlefont2{
+    .titlefont2, .titlefont3{
         font-size:30px;
     }
-    .arial1, .text1, .ridi1{
+    .arial1, .text1, .ridi1, .arial4{
         font-size:14px;
     }
     .arial2{
@@ -172,7 +223,13 @@ footer>div>div:nth-of-type(2)>p{
         display: none;
     }
     .big{
-        display: block;
+        width:93%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .arial3{
+        font-size:18px;
     }
     .sliderfont{
         font-size:80px;
@@ -180,10 +237,10 @@ footer>div>div:nth-of-type(2)>p{
     .titlefont{
         font-size:50px;
     }
-    .titlefont2{
+    .titlefont2, .titlefont3{
         font-size:30px;
     }
-    .arial1, .text1, .ridi1{
+    .arial1, .text1, .ridi1 , .arial4{
         font-size:16px;
     }
     .arial2{

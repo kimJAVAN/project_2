@@ -9,18 +9,37 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="img/pobicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Secular+One&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/main.js">
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <header>
         <div class="small">
             <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
+            <div><?xml version="1.0"?><svg class="feather feather-menu" onclick="openNav()" fill="none" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg></div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><?xml version="1.0" ?><svg class="feather feather-x" fill="none" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg></a>
+                <div class="overlay-content">
+                    <a href="#" class="titlefont2">HOME</a>
+                    <a href="#" class="titlefont2">INTRODUCE</a>
+                    <a href="#" class="titlefont2">PRODUCT</a>
+                    <a href="#" class="titlefont2">DELIVERY</a>
+                    <a href="#" class="titlefont2">SURVICE</a>
+                    <a href="#" class="titlefont2">CONTACT</a>
+                </div>
+            </div>
         </div>
         <div class="big">
+            <div class="arial3 besr"><a href="#sec1">BESTSELLER</a></div>
+            <div class="arial3"><a href="#sec3">FRAGRANCES</a></div>
             <div><img src="img/a6.png" alt="" style="width: 200px;"></div>
+            <div class="arial3"><a href="#sec4">OFFERS</a></div>
+            <div class="arial3"><a href="#sec5">OTHERS</a></div>
         </div>
     </header>
     <hr>
@@ -41,33 +60,32 @@
             </div>
         </article>
         <table class="sec1table">
-            <tr class="another">
-                <td class="titlefont2 tr1">ANOTHER 13</td>
-                <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Moss<br>Jasmine<br>Ambrox</td>
+            <tr class="ta1" style="background-image: url(img/t1.PNG);">
+                <td class="titlefont3 tr1">ANOTHER 13</td>
+                <td class="arial4 tr2">280,000</td>
+                <td class="arial4 tr3">Moss<br>Jasmine<br>Ambrox</td>
             </tr>
-            <tr class="santal">
-                <td class="titlefont2 tr1">SANTAL 33</td>
-                <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Iris<br>Violet<br>Ambrox</td>
+            <tr class="ta1" style="background-image: url(img/t2.PNG);">
+                <td class="titlefont3 tr1">SANTAL 33</td>
+                <td class="arial4 tr2">280,000</td>
+                <td class="arial4 tr3">Iris<br>Violet<br>Ambrox</td>
             </tr>
-            <tr class="noir">
-                <td class="titlefont2 tr1">THE NOIR 29</td>
-                <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Bergamot<br>Fig<br>Bay tree</td>
+            <tr class="ta1" style="background-image: url(img/t4.PNG);">
+                <td class="titlefont3 tr1">THE NOIR 29</td>
+                <td class="arial4 tr2">280,000</td>
+                <td class="arial4 tr3">Bergamot<br>Fig<br>Bay tree</td>
             </tr>
-            <tr class="marcha">
-                <td class="titlefont2 tr1">THE MATCHA 26</td>
-                <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Bitter Orange<br>Fig<br>Cedarwood</td>
+            <tr class="ta1" style="background-image: url(img/t3.PNG);">
+                <td class="titlefont3 tr1">OUD 27</td>
+                <td class="arial4 tr2">280,000</td>
+                <td class="arial4 tr3">Patchouli<br>Cedar tree<br>Dandelion</td>
             </tr>
-            <tr class="baie">
-                <td class="titlefont2 tr1">BAIE 19</td>
-                <td class="arial1 tr2">280,000</td>
-                <td class="arial1 tr3">Juniper berry<br>Patchouli<br>Leaves</td>
+            <tr class="ta1" style="background-image: url(img/t5.PNG);">
+                <td class="titlefont3 tr1_1">BAIE 19</td>
+                <td class="arial4 tr2_1">280,000</td>
+                <td class="arial4 tr3_1">Juniper berry<br>Patchouli<br>Leaves</td>
             </tr>
         </table>
-
     </div>
 
     <div id="sec2">
@@ -85,6 +103,9 @@
     <div id="sec3">
         <div>
             <div class="sec3div1">
+                <div>
+                    <p class="titlefont2 border3 sec3p3">Le Labo's scent</p>
+                </div>
                 <div>
                     <img src="img/a17.jpg" alt="img">
                     <p class="titlefont2">TUBEREUSE 40</p>
@@ -178,7 +199,7 @@
                     <span class="text1">Le Labo, a handmade perfume house founded in New York in 2006. Le Labo presents handmade perfumes, home collections, and body collections with the theme of a perfume-making laboratory. Le Labo's perfume collection is created in collaboration with talented and creative perfumers.</p>
                     </span> 
                     </div>
-            <div></div>
+            <div class="sec3div3"></div>
         </div>
     </div>
 
@@ -196,7 +217,7 @@
                     <p class="titlefont2">name labeling service</p>
                     <p class="ridi1">르 라보는 뉴욕에서 탄생한 핸드메이드 퍼퓸 브랜드입니다. 르 라보는 오늘날 럭셔리 향수 시장의 틀을 깬 혁신적인 경험을 선사합니다. 모든 향수는 신성하게 핸드 블렌딩 되며, 고객의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.<br><br>
                         <span class="text1">
-                         Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
+                        Le Labo is a handmade perfume brand born in New York. Le Labo offers an innovative experience that breaks the mold of today's luxury fragrance market. All fragrances are divinely hand-blended and custom-labeled with the customer's name or desired phrase.</p>
                         </span>
                 </div>
                 <div id="slide2">
