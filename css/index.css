@@ -330,7 +330,7 @@
     transition: 0.3s all ease-in-out;
     cursor: pointer;
 }
-.sec6sub:hover, .sec6sub1:hover{
+.sec6sub:hover, .sec6sub1:hover, #sec6 .active{
     background-color: #444;
     color:white;
 }
