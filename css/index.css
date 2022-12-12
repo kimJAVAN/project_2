@@ -295,23 +295,10 @@
     display: flex;
 }
 #sec6>div>div{
-    width:60%;
-    height:900px;
     border-left: 2px solid #666;
     border-right: 2px solid #666;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
-}
-#sec6>div>div>div{
-    position: absolute;
-    width:50%;
-}
-#sec6>div>div>div>img{
-    width:70%;
-    height:auto;
 }
 #sec6>div>div>div>p{
     display: flex;
@@ -326,8 +313,6 @@
     display: block;
 }
 #sec6>div>ul{
-    width:40%;
-    height:900px;
     border-right: 2px solid #666;
     text-align: right;
     display: flex;
@@ -495,6 +480,52 @@
         border-right: 2px solid #666;
         border-top: 2px solid #666;
     }
+    #sec6{
+        width:93%;
+        height:900px;
+        margin:0 auto;
+    }
+    #sec6>div{
+        width:100%;
+        height:900px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sec6>div>div>div{
+        position: absolute;
+        width:80%;
+    }
+    #sec6>div>div>div>img{
+        width:50%;
+        height:auto;
+    }
+    #sec6>div>div{
+        width:100%;
+        height:550px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #sec6>div>ul{
+        width:100%;
+        height:350px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border:2px solid #666;
+        border-bottom: none;
+    }
+    #sec6>div>ul>li{
+        width:33.3%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .sec6ti{
+        height:80px;
+    }
+    .sec6sub{
+        height:54px;
+    }
 }
 @media (min-width:768px){
     .sec8sub{
@@ -515,6 +546,31 @@
         width:6%;
         height:900px;
         border-right: 2px solid #666;
+    }
+    #sec6>div>div>div{
+        position: absolute;
+        width:50%;
+    }
+    #sec6>div>div>div>img{
+        width:70%;
+        height:auto;
+    }
+    #sec6>div>div{
+        width:60%;
+        height:900px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #sec6>div>ul{
+        width:40%;
+        height:900px;
+    }
+    #li7{
+        border:none;
+    }
+    #li12{
+        border-bottom:2px solid #666;
     }
 }
 @media (min-width:1000px){
@@ -537,5 +593,29 @@
         height:900px;
         border-right: 2px solid #666;
     }
-
+    #sec6>div>div>div{
+        position: absolute;
+        width:50%;
+    }
+    #sec6>div>div>div>img{
+        width:70%;
+        height:auto;
+    }
+    #sec6>div>div{
+        width:60%;
+        height:900px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #sec6>div>ul{
+        width:40%;
+        height:900px;
+    }
+    #li7{
+        border:none;
+    }
+    #li12{
+        border-bottom:2px solid #666;
+    }
 }
