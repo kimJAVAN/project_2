@@ -63,13 +63,12 @@ body::-webkit-scrollbar-thumb{
     font-family: Arial;
     color:white;
 }
-
 .text1{
     font-family: "Roboto Slab";
     color:#666;
     line-height: 130%;
 }
-.ridi1{
+.ridi1, .ridi2 {
     font-family: "RIDIBatang";
     color:#444;
     line-height: 140%;
@@ -183,7 +182,7 @@ footer>div>div:nth-of-type(2)>p{
         font-size:5vw;
     }
     .titlefont4{
-        font-size:40px;
+        font-size:35px;
     }
     .titlefont2, .titlefont3{
         font-size:18px;
@@ -192,7 +191,7 @@ footer>div>div:nth-of-type(2)>p{
         font-size:12px;
         line-height: 150%;
     }
-    .arial2{
+    .arial2, .ridi2{
         font-size:3vw;
     }
 }
@@ -221,7 +220,7 @@ footer>div>div:nth-of-type(2)>p{
     .arial1, .text1, .ridi1, .arial4{
         font-size:14px;
     }
-    .arial2{
+    .arial2, .ridi2{
         font-size:24px;
     }
 }
@@ -253,7 +252,7 @@ footer>div>div:nth-of-type(2)>p{
     .arial1, .text1, .ridi1 , .arial4{
         font-size:16px;
     }
-    .arial2{
+    .arial2 , .ridi2{
         font-size:24px;
     }
 }
