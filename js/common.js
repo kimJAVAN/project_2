@@ -20,9 +20,8 @@ $(function(){
     $(`.slide li:nth-of-type(${index+2})`).css('transform','scale(1.2)').css('transition','all 1s ease');
     $('.prev').click(function () {
         index--;
-        if (index < 0) {
-            index = 0;
-            alert('First Member');
+        if (index < -1) {
+            index = -1;
             return;
         }
         $('.slideul').stop().animate({ marginLeft: -336 * index }, 800);
@@ -32,9 +31,8 @@ $(function(){
     $('.next').click(function () {
 
         index++;
-        if (index > $('.slideul li').length-3) {
-            index = $('.slideul li').length-3;
-            alert('Last Member');
+        if (index > $('.slideul li').length -2) {
+            index = $('.slideul li').length-2;
             return;
         }
         $('.slideul').stop().animate({ marginLeft: -336 * index }, 800);
