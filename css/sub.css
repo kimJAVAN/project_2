@@ -316,7 +316,7 @@
     #slide06:checked ~ .slide-control .control06 {display:block;}
     #slide07:checked ~ .slide-control .control07 {display:block;}
     #sub8, .sub8div1, .sub8div2, .sub8div3{
-        height:650px;
+        height:700px;
     }
     .slidewrap{
         display: none;
@@ -421,7 +421,7 @@
     }
 
     #sub8, .sub8div1, .sub8div2, .sub8div3{
-        height:500px;
+        height:600px;
     }
 }
 @media(min-width:1170px){
@@ -489,6 +489,6 @@
     }
 
     #sub8, .sub8div1, .sub8div2, .sub8div3{
-        height:500px;
+        height:600px;
     }
 }
