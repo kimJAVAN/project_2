@@ -125,7 +125,7 @@
     background-image: url(../img/slider.jpg);
     background-repeat: repeat-x;
     background-position: left;
-    background-size:height 100%;
+    background-size:auto 100%;
     border-right: 2px solid #666;
     border-bottom: 2px solid #666;
     animation:movebg 450s linear infinite;
